@@ -30,6 +30,7 @@ echo -e "\e[1;31m"
 figlet CASBERG
 echo -e "\e[1;34m Created By \e[1;32m"
 toilet -f ivrit 'CASBERG' | boxes -d cat -a hc -p h8 | lolcat
+echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1
 echo -e "\e[4;34m This url shortner Was Created By CASBERG \e[0m"
 echo -e "\e[1;34m For Any Queries Mail Me!!!\e[0m"
 echo -e "\e[1;32m           Mail: casbergskull@gmail.com \e[0m"
