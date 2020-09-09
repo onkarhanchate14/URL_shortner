@@ -2,6 +2,8 @@
 ## v1.1
 A open source URL shortner for Linux and Termux
 
+<img src="https://i.ibb.co/n7vwYP7/Unbenannt.png" width="800px" height="auto">
+
 ## Features:
 * Convert any URL into shortned URL
 * Easy to use
@@ -23,5 +25,5 @@ chmod +x url.sh
 ```
 Feel free to contact me
 
-email:     casbergskull@gmail.com
+E-Mail: casbergskull@gmail.com
 ```
