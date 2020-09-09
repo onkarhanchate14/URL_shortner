@@ -1,13 +1,24 @@
+#!/bin/bash
+
+# Welcome Splashscreen
+welcome() {
 clear
-echo -e "\e[4;31m CASBERG Productions !!! \e[0m"
-echo -e "\e[1;34m Presents \e[0m"
-echo -e "\e[1;32m URL_shortner \e[0m"
+toilet -f ivrit 'URL_shortner V 1.2 Made by CASBERG' -w 90 | boxes -d cat -a hc -p h8 | lolcat
 echo "Press Enter To Continue"
 read a1
-if [[ -s update.casberg ]];then
-echo "All Requirements Found...."
+}
+
+# Check Dependencies Environment
+env_check() {
+if ! [[ -f update.casberg ]];then
+reqinstall
 else
-echo 'Installing Requirements....'
+menu
+fi
+}
+
+reqinstall() {
+echo 'Installing Requirements...'
 echo .
 echo .
 apt install figlet toilet python curl -y
@@ -17,24 +28,24 @@ pip install validators
 apt install toilet -y
 apt install boxes
 apt install lolcat -y
-echo This Script Was Made By CASBERG >update.casberg
-echo Requirements Installed....
-echo Press Enter To Continue...
-read upd
-fi
-# while :
-# do
-# rm *.xxx >/dev/null 2>&1
-clear
-echo -e "\e[1;31m"
-figlet CASBERG
-echo -e "\e[1;34m Created By \e[1;32m"
-toilet -f ivrit 'CASBERG' | boxes -d cat -a hc -p h8 | lolcat
-echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1
-echo -e "\e[4;34m This url shortner Was Created By CASBERG \e[0m"
-echo -e "\e[1;34m For Any Queries Mail Me!!!\e[0m"
-echo -e "\e[1;32m           Mail: casbergskull@gmail.com \e[0m"
-echo " "
-python3 shortner.py
+touch update.casberg
+echo All Requirements has been installed
+sleep 3
+menu
+}
 
-exit 0
+# Start URL-Shortner
+menu() {
+clear
+toilet -f ivrit 'URL_shortner V 1.2 Made by CASBERG' -w 90 | boxes -d cat -a hc -p h8 | lolcat
+echo ""
+echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1
+echo -e "\e[1;34m The URL_shortner was created by CASBERG \e[0m"
+echo -e "\e[1;34m For any queries mail me.\e[0m"
+echo -e "\e[1;32m Mail: casbergskull@gmail.com \e[0m"
+echo ""
+python3 shortner.py
+}
+
+welcome
+env_check
