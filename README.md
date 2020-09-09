@@ -1,5 +1,5 @@
 # URL_shortner
-## v1.1
+## v1.2
 A open source URL shortner for Linux and Termux
 
 <img src="https://i.ibb.co/n7vwYP7/Unbenannt.png" width="800px" height="auto">
