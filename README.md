@@ -5,6 +5,7 @@ A open source URL shortner for Linux and Termux
 ## Features:
 * Convert any URL into shortned URL
 * Easy to use
+* Gives more than 5 shortned URL with different domains
 
 ## Usage:
 Run these commands
