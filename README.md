@@ -22,5 +22,5 @@ chmod +x url.sh
 ```
 Feel free to contact me
 
-email:casbergskull@gmail.com
+email:     casbergskull@gmail.com
 ```
